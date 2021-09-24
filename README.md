@@ -12,4 +12,4 @@ curl -d '{"text":"The fox jumped over the fence, and the fence fell down.","mode
 ```
 Step 5:
  
-Open url http://dickens.seas.upenn.edu:4007/ in the browser, then you can play with it!
+Open url http://leguin.seas.upenn.edu:4007/ in the browser, then you can play with it!
