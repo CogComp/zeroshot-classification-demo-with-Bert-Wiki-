@@ -8,7 +8,7 @@ Step 3: Run run.sh
 
 New Step 4: Then in another termianl enter:
 ```
-curl -d '{"text":"The fox jumped over the fence, and the fence fell down.","models":["Bert-MNLI","Bert-FEVER", "Bert-RTE", "ESA", "Bart-MNLI","Bart-FEVER", "Bart-RTE"],"labels":["Society", "Health", "Sports"], "descriptions":["society des"]}' -H 'Content-Type: application/json' -X POST http://dickens.seas.upenn.edu:4007/predict
+curl -d '{"text":"The fox jumped over the fence, and the fence fell down.","models":["Bert-MNLI","Bert-FEVER", "Bert-RTE", "ESA", "Bart-MNLI","Bart-FEVER", "Bart-RTE"],"labels":["Society", "Health", "Sports"], "descriptions":["society des"]}' -H 'Content-Type: application/json' -X POST http://leguin.seas.upenn.edu:4007/predict
 ```
 Step 5:
  
