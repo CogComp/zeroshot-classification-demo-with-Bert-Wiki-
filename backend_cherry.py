@@ -88,7 +88,8 @@ class StringPredicter(object):
         ##for idx,label in enumerate(data["labels"]):
         for idx,label in enumerate(data["label_description"]):
             if label != None:
-                each_label_result = {"label": label, 'Sum': 0.}
+                ##each_label_result = {"label": label, 'Sum': 0.}
+                each_label_result = {"label": data["labels"][idx], 'Sum': 0.}
                 # if idx < len(data["descriptions"]) and data["descriptions"][idx] != None: #means user added descriptions
                 #     each_label_result['label'] = label + ' + ' + '{}...'.format(data["descriptions"][idx][:15])
                 #     label = label + ' | ' + data["descriptions"][idx]
