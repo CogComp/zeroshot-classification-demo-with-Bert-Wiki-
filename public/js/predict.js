@@ -54,7 +54,7 @@ $("#btn1").click(function () {
 });
 
 $("#btn2").click(function () {
-   $("#text").html(
+   $("#text").val(
        ""
 );
 
@@ -160,7 +160,7 @@ $("#buttonText").on('click', 'a', function (event) {
     var descriptitons_list = examples[key]["descriptitons"];
 
 
-    $("#text").html(
+    $("#text").val(
        text
 );
     $("#center").html(
@@ -248,9 +248,10 @@ function predict(){
             "text": text,
             "labels": labels,
             "models": models,
-                "descriptions": descriptions
+            "descriptions": descriptions
             };
-
+            console.log('data:');
+            console.log(data);
 
             var reuslut_chart = [
             {label: 'sadness', 'MNLI': 31, 'FEVER': 85.8, 'RTE': 93.7},
