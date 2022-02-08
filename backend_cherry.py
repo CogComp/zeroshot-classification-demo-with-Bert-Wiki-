@@ -72,6 +72,7 @@ class StringPredicter(object):
             "labels": data["labels"],
             "sorted_output": [],
         }
+        print(f'data: {data}')
         for idx,label in enumerate(data["labels"]):
             if label != None:
                 each_label_result = {"label": label, 'Sum': 0.}
