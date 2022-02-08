@@ -65,22 +65,36 @@ class StringPredicter(object):
         cherrypy.response.headers['Content-Type'] = 'application/json'
         data = cherrypy.request.json
         # model_list = ["MNLI", "FEVER", "RTE"]  # FIXED !
-        ESA_cosin_simlarity_list = ESA_cosine(data["text"], data["labels"], ESA_sparse_matrix, ESA_word2id)
+        # add label description
+        label_des = []
+        for i in range(len(data['labels'])):
+          try:
+            label_combine = data['labels'][i] + " | " + data['descriptions'][i].replace('|',",")
+          except:
+            label_combine = data['labels'][i]
+          label_des.append(label_combine)
+        data['label_description'] = label_des
+        
+        ##ESA_cosin_simlarity_list = ESA_cosine(data["text"], data["labels"], ESA_sparse_matrix, ESA_word2id)
+        ESA_cosin_simlarity_list = ESA_cosine(data["text"], data["label_description"], ESA_sparse_matrix, ESA_word2id)
         result = {
             "text": data["text"],
             "models": data["models"],
             "labels": data["labels"],
+            "label_description": data['label_description'], #add new field
             "sorted_output": [],
         }
         print(f'data: {data}')
-        for idx,label in enumerate(data["labels"]):
+        ##for idx,label in enumerate(data["labels"]):
+        for idx,label in enumerate(data["label_description"]):
             if label != None:
                 each_label_result = {"label": label, 'Sum': 0.}
                 # if idx < len(data["descriptions"]) and data["descriptions"][idx] != None: #means user added descriptions
                 #     each_label_result['label'] = label + ' + ' + '{}...'.format(data["descriptions"][idx][:15])
                 #     label = label + ' | ' + data["descriptions"][idx]
                 #     result["labels"][idx] = label
-                if label not in result["labels"][:idx]:
+                ##if label not in result["labels"][:idx]:
+                if label not in result["label_description"][:idx]:
                     test_examples = load_demo_input(data["text"], label.split(' | '))
                     for model_name in data["models"]:
                         if model_name in ["Bert-MNLI", "Bert-FEVER", "Bert-RTE", "Bert-Wiki"]:
