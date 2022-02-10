@@ -32,7 +32,11 @@ var examples ={
         "descriptitons": ["", "medical", "", "", "", "","", "", "", "", "", "", "", "", "", "", "", "", "", ""]    
         //"descriptitons": ["Covid-19 | Coronaviruses are a group of related RNA viruses.", "medical", "", "", "", "","", "", "", "", "", "", "", "", "", "", "", "", "", ""]
     },
-
+     "Volcanic eruption": {
+        "text": "The volcanic eruption was the largest recorded in thirty years. A huge, 20 km high mushroom cloud of smoke and ash was followed by a tsunami, and the eruption was heard as far away as Australia and New Zealand, causing tsunami warnings across the Pacific.",
+        "labels": ["disaster","politics", "society", "", "", "", "","", "", "", "", "", "", "", "", "", "", "", "", "" ],
+        "descriptitons": ["", "", "", "", "", "","", "", "", "", "", "", "", "", "", "", "", "", "", ""]    
+    }
 
 
 };
