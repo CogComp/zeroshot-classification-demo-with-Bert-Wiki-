@@ -28,7 +28,7 @@ var examples ={
 
     "Expert: Speed vs Safety in Vaccine Race": {
         "text": "Vaccine research expert Dr. Ishii Ken discusses Oxford University's latest findings, plus ongoing coronavirus vaccine efforts around the world and the need to balance speed with safety in the vaccine race.",
-        "labels": ["pandemic","technology", "music", "", "", "", "","", "", "", "", "", "", "", "", "", "", "", "", "" ],
+        "labels": ["pandemic","technology", "politics", "", "", "", "","", "", "", "", "", "", "", "", "", "", "", "", "" ],
         "descriptitons": ["Covid-19 | Coronaviruses are a group of related RNA viruses.", "medical", "", "", "", "","", "", "", "", "", "", "", "", "", "", "", "", "", ""]
     },
 
