@@ -35,8 +35,8 @@ var examples ={
      "Volcanic eruption": {
         //"text": "The volcanic eruption was the largest recorded in thirty years. A huge, 20 km high mushroom cloud of smoke and ash was followed by a tsunami, and the eruption was heard as far away as Australia and New Zealand, causing tsunami warnings across the Pacific.",
         "text": "The Hunga volcanic eruption was the largest recorded in thirty years. A huge, 20 km high mushroom cloud of smoke and ash was followed by a tsunami. Waves as high as 1.2 meters hit the capital, Nuku’alofa, whose inhabitants fled to high ground, leaving behinds flooded houses, whilst rocks and ash rained from the sky."
-        "labels": ["natural disaster","destruction", "emergency", "environment", "", "", "","", "", "", "", "", "", "", "", "", "", "", "", "" ],
-        "descriptitons": ["", "human, material and economic loss", "an urgent need for assistance", "pollution in food, water and air", "", "","", "", "", "", "", "", "", "", "", "", "", "", "", ""]    
+        "labels": ["disaster","destruction", "emergency", "environment", "", "", "","", "", "", "", "", "", "", "", "", "", "", "", "" ],
+        "descriptitons": ["natural disaster", "human, material and economic loss", "an urgent need for assistance", "pollution in food, water and air", "", "","", "", "", "", "", "", "", "", "", "", "", "", "", ""]    
     }
 
 
