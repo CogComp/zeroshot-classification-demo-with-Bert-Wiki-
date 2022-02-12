@@ -28,9 +28,8 @@ var examples ={
 
     "Expert: Speed vs Safety in Vaccine Race": {
         "text": "Vaccine research expert Dr. Ishii Ken discusses Oxford University's latest findings, plus ongoing coronavirus vaccine efforts around the world and the need to balance speed with safety in the vaccine race.",
-        "labels": ["pandemic","technology", "politics", "society", "", "", "","", "", "", "", "", "", "", "", "", "", "", "", "" ],
-        "descriptitons": ["", "medical", "", "", "", "","", "", "", "", "", "", "", "", "", "", "", "", "", ""]    
-        //"descriptitons": ["Covid-19 | Coronaviruses are a group of related RNA viruses.", "medical", "", "", "", "","", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+        "labels": ["pandemic","technology", "politics", "society", "", "", "","", "", "", "", "", "", "", "", "", "", "", "", "" ], 
+        "descriptitons": ["Covid-19 | Coronaviruses are a group of related RNA viruses.", "medical", "", "", "", "","", "", "", "", "", "", "", "", "", "", "", "", "", ""]
     },
      "Volcanic eruption": {
         //"text": "The volcanic eruption was the largest recorded in thirty years. A huge, 20 km high mushroom cloud of smoke and ash was followed by a tsunami, and the eruption was heard as far away as Australia and New Zealand, causing tsunami warnings across the Pacific.",
